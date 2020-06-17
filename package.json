@@ -1,4 +1,5 @@
 {
+	"homepage": "http://davidwesolowski.github.io/worldtime-app",
 	"name": "worldtime-app",
 	"version": "1.0.0",
 	"description": "",
@@ -9,6 +10,8 @@
 		"build:dev": "npm run webpack -- --env development",
 		"build:prod": "npm run webpack -- --env production",
 		"devserver": "npm run webpack-dev-server -- --env development",
+		"predeploy": "npm run build:prod",
+		"deploy": "gh-pages -d ./public",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
@@ -43,6 +46,7 @@
 		"eslint-plugin-react": "^7.20.0",
 		"eslint-plugin-react-hooks": "^4.0.4",
 		"file-loader": "^6.0.0",
+		"gh-pages": "^3.0.0",
 		"prettier": "^2.0.5",
 		"style-loader": "^1.2.1",
 		"url-loader": "^4.1.0",

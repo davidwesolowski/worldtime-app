@@ -32,7 +32,7 @@ const Clock = ({ zone, time, loaded }) => {
 		if (time) {
 			setTick(() => time);
 			id = setInterval(() => {
-				setTick(prev => moment(prev).add(1, 's').format());
+				setTick(prev => moment(prev).add(1, 's'));
 			}, 1000);
 		}
 		return () => clearInterval(id);
