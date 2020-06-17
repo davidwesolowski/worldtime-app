@@ -13,7 +13,7 @@ const headerStyles = css({
 });
 
 const Header = () => (
-	<Row className="align-items-start">
+	<Row style={{ padding: 0 }}>
 		<Col xs={12}>
 			<header css={headerStyles}>
 				<p className="text-center text-uppercase">
